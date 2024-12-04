@@ -1,0 +1,10 @@
+pandas
+seaborn
+numpy
+matplotlib
+jupyter
+jupyterlab
+python-dotenv
+pymongo
+category_encoders
+geopandas
