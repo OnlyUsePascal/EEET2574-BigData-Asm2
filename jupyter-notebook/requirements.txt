@@ -8,3 +8,4 @@ python-dotenv
 pymongo
 category_encoders
 geopandas
+pyspark
