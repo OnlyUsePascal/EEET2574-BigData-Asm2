@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.11.11-bookworm
 
 USER root
 
@@ -14,7 +14,7 @@ RUN python -m pip install --upgrade pip && \
 
 COPY ./ ./
 
-RUN jupyter trust ./notebook.ipynb
+RUN jupyter trust notebook/*.ipynb
 
 EXPOSE 8888
 

@@ -12,25 +12,6 @@ services:
     build: jupyter-notebook
     ports:
       - 8888:8888
-      - 4040:4040 
-      - 4041:4041
     env_file:
       - .env
-    networks:
-      - spark-network
   
-  server-pyspark:
-    container_name: server-pyspark 
-    image: server-pyspark
-    build: server-pyspark
-    environment:
-      - SPARK_MODE=master
-    ports:
-      - 8080:8080
-      - 7077:7077
-    networks:
-      - spark-network
-    
-networks:
-  spark-network:
-    driver: bridge
