@@ -17,6 +17,8 @@ COPY ./ ./
 RUN jupyter trust notebook/*.ipynb
 
 EXPOSE 8888
+EXPOSE 8080
+EXPOSE 5000
 
 # CMD jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
 
