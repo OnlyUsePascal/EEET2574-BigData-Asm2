@@ -1,15 +1,16 @@
 pandas
-seaborn
+seaborn==0.13.2
 numpy
 matplotlib
 jupyter
 jupyterlab
 python-dotenv
-pymongo
+pymongo==4.10.1
+category_encoders==2.6.4
+# geopandas
+# pyspark
+# databricks-connect==15.4.*
+scikit-learn==1.5.2
+mlflow==2.19.0
 category_encoders
-geopandas
-pyspark
-databricks-connect==15.4.*
-scikit-learn
-mlflow
-category_encoders
+xgboost==2.1.3
