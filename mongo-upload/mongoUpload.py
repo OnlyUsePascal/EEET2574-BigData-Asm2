@@ -18,7 +18,8 @@ energyTypes = ['Electricity', 'Gas']
 
 # init db
 client = pymongo.MongoClient(MONGO_URL)
-db = client.get_database('asm2-test1')
+# db = client.get_database('asm2-test1')
+db = client.get_database('asm2-testtt')
 # coll = db['']
 
 for energyType in energyTypes:

@@ -1,13 +1,13 @@
 services:
   mongo-upload:
-    container_name: mongo-upload
+    # container_name: mongo-upload
     image: mongo-upload
     build: mongo-upload
     env_file:
       - .env
       
   jupyter-notebook:
-    container_name: jupyter-notebook
+    # container_name: jupyter-notebook
     image: jupyter-notebook
     build: jupyter-notebook
     ports:
